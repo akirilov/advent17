@@ -1,4 +1,4 @@
-input = 277678
+puzzle_in = 277678
 
 x = 0
 y = 0
@@ -11,7 +11,7 @@ iteration = 0
 distance_target = 1
 distance = 1
 
-for i in range(1, input):
+for i in range(1, puzzle_in):
     if direction == 1:
         x -= 1
     elif direction == 2:
