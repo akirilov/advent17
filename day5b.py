@@ -1083,7 +1083,10 @@ def solve(pin):
     while True:
         steps += 1
         next_pos = pos + pin_nums[pos]
-        pin_nums[pos] += 1
+        if pin_nums[pos] < 3:
+            pin_nums[pos] += 1
+        else:
+            pin_nums[pos] -= 1
         if next_pos not in range(len(pin_nums)):
             return steps
         pos = next_pos
